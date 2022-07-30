@@ -17,7 +17,8 @@ html {
 }
 
 body {
-    max-width: 1300px;
+    /* max-width: 1300px; */
+    /* margin: 0 auto; */
 }
 
 header {
@@ -29,8 +30,9 @@ header h1 {
     color: var(--second-bg-color);
     width: 80%;
     margin: 0 auto;
+    font-size: 2.5rem;
     text-align: center;
-    padding: 1.5rem 1rem;
+    padding: 2rem 1rem;
 }
 
 .hero {
@@ -76,6 +78,7 @@ header h1 {
 .main__gallery .title {
     font-weight: bold;
     font-size: 2rem;
+    color: rgb(80, 79, 79);
     text-align: center;
     padding: .5rem;
 }
@@ -103,7 +106,11 @@ footer p {
     color: white;
     text-align: center;
     padding: 4rem;
-    font-size: 1.8rem;
+    font-size: 2.5rem;
+}
+
+footer p span {
+    font-size: 1.6rem;
 }
 
 
