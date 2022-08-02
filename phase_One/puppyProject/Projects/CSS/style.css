@@ -2,7 +2,6 @@
     --main-bg-color: #11657f;
     --second-bg-color: white;
     --bg-pink: rgb(238, 138, 155);
-
 }
 
 * {
@@ -17,8 +16,8 @@ html {
 }
 
 body {
-    /* max-width: 1300px; */
-    /* margin: 0 auto; */
+    /* max-width: 880px;
+    margin: 0 auto; */
 }
 
 header {
@@ -69,6 +68,7 @@ header h1 {
 .main__featured img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 
 .main__gallery {
