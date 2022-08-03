@@ -1,0 +1,143 @@
+:root {
+  --main-bg-color: #074584;
+  --footer-bg-color: #11657f;
+  --bg-pink: rgb(238, 138, 155);
+  --color-white: #fff;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: sans-serif;
+}
+
+body {
+  max-width: 821px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: var(--main-bg-color);
+}
+
+header h1 {
+  color: var(--color-white);
+  width: 80%;
+  margin: 0 auto;
+  font-size: 2.5rem;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.hero {
+  width: 100%;
+}
+
+.hero__image img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.main {
+  width: 80%;
+  margin: 0 auto;
+  padding: 4rem 0;
+}
+
+.main__featured {
+  position: relative;
+  /* display: grid;
+  grid-template-columns: repeat(3, 1fr); */
+  background-color: var(--second-bg-color);
+  display: flex;
+  text-align: center;
+  font-size: 3rem;
+  column-gap: 1.2rem;
+  /* justify-content: space-between; */
+}
+
+.center {
+  background-color: var(--bg-pink);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* width: 100%;
+  height: 100%; */
+}
+.center p {
+  width: 100%;
+  padding: 0 1.2rem;
+  height: 100%;
+}
+
+.main__featured img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.main__gallery {
+  padding-top: 4rem;
+}
+
+.main__gallery .title {
+  font-weight: bold;
+  font-size: 2rem;
+  color: rgb(80, 79, 79);
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.main__gallery .gallery {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 4rem;
+  padding-top: 4rem;
+}
+
+.main__gallery .gallery img {
+  width: 100%;
+  object-fit: cover;
+}
+
+footer {
+  margin: 0 auto;
+  background-color: var(--main-bg-color);
+}
+
+footer p {
+  color: white;
+  text-align: center;
+  padding: 4rem;
+  font-size: 2.5rem;
+}
+
+footer p span {
+  font-size: 1.6rem;
+}
+
+/*Responsive Design*/
+@media screen and (max-width: 600px) {
+  .main__featured {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    /* grid-template-columns: repeat(auto-fill, minmax(174px, 1fr)); */
+  }
+
+  .center {
+    display: none;
+  }
+
+  .main__gallery .gallery {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+  }
+}
