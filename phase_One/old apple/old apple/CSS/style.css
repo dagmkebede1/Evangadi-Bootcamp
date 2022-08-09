@@ -1,0 +1,190 @@
+:root {
+  --bg-dark: black;
+  --bg-light-grey: rgb(231, 231, 231);
+  --color-white: white;
+  --color-grey: grey;
+  --color-blue: #06c;
+}
+html {
+  font-family: sans-serif;
+  font-size: 62.5%;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* Navigations */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  font-size: 1.6rem;
+  background-color: var(--bg-dark);
+  height: 4.4rem;
+}
+nav ul {
+  width: 98rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav ul li {
+  list-style-type: none;
+}
+nav ul li a:link,
+nav ul li a:visited {
+  text-decoration: none;
+  color: var(--color-grey);
+  font-weight: 100;
+  padding: 0 0.5rem;
+  transition: all 0.3s;
+}
+nav ul li a:hover,
+nav ul li a:active {
+  color: var(--color-white);
+}
+nav ul li a img {
+  margin: auto 0;
+  width: 1.8rem;
+  vertical-align: middle;
+  color: var(--color-grey);
+}
+/* Section--Mac */
+
+.mac {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 2rem;
+}
+.mac .mac__text p {
+  font-weight: lighter;
+  font-size: 1.8rem;
+  color: rgb(110, 110, 110);
+}
+.mac .mac__text h1 {
+  font-size: 5.6rem;
+}
+.mac .mac__text h2 {
+  font-size: 2em;
+  font-weight: 100;
+}
+/* reusable class */
+.link {
+  font-size: 2rem;
+  display: flex;
+  gap: 2.5rem;
+}
+.link a:link,
+.link a:visited {
+  color: var(--color-blue);
+  text-decoration: none;
+  transition: all 0.3s;
+}
+.link a:hover,
+.link a:active {
+  color: var(--bg-dark);
+}
+.bg__img{
+    height: 71rem;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
+/* Iphone Section */
+.iphone {
+}
+.iphone__dark{
+    background-image: url(/images/home/iphone11-pro-bg.jpg);
+}
+.info {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  color: white;
+ padding-top: 5rem;
+}
+/* reusable class */
+.text h2 {
+  font-size: 5rem;
+}
+.text h3 {
+  font-size: 3rem;
+  font-weight: 100;
+  padding: 1rem 0;
+}
+.text p {
+  font-size: 1.8rem;
+  font-weight: 100;
+  color: var(--color-grey);
+  padding-bottom: 1rem;
+}
+.image img {
+  width: 100%;
+  height: 71rem;
+  object-fit: cover;
+}
+/* ---------------- */
+.iphone__light {
+    background-image: url(/images/home/iphone11-bg.jpg);
+}
+.dark .text {
+  color: var(--bg-dark);
+}
+/* More products */
+/* Responsive Design */
+.more__products {
+    max-width: 130rem;
+    margin: 0 auto;
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(50rem, 1fr));
+}
+.watch{
+    background-image: url(/images/home/watch-series-5.jpg);
+}
+.card{
+    background-image: url(/images/home/apple-card.jpg);
+}
+.tv{
+    background-image: url(/images/home/apple-tv-background.jpg);
+}
+.airpods{
+background-color: black;
+}
+.airpods .air__img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.macbook{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ipad{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ipad img{
+    width: 100%;
+}
+footer{
+    max-width: 100rem;
+    margin: 2rem auto;
+
+}
+footer .footer__links{
+    display: flex;
+}
+@media screen {
+  
+}
