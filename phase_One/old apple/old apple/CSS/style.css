@@ -214,6 +214,10 @@ a i {
   background-image: url("../images/home/apple-tv-background.jpg");
 }
 
+.tv p i {
+  color: rgb(26, 25, 25);
+}
+
 .airpods {
   background-color: black;
 }
