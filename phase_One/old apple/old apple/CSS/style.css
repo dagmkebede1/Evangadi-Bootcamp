@@ -91,17 +91,17 @@ nav ul li a img {
 .link a:active {
   color: var(--bg-dark);
 }
-.bg__img{
-    height: 71rem;
-    background-size: cover;
-    background-position: center;
-    width: 100%;
+.bg__img {
+  height: 71rem;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
 }
 /* Iphone Section */
 .iphone {
 }
-.iphone__dark{
-    background-image: url(/images/home/iphone11-pro-bg.jpg);
+.iphone__dark {
+  background-image: url("../images/home/iphone11-pro-bg.jpg");
 }
 .info {
   display: flex;
@@ -110,7 +110,7 @@ nav ul li a img {
   text-align: center;
   align-items: center;
   color: white;
- padding-top: 5rem;
+  padding-top: 5rem;
 }
 /* reusable class */
 .text h2 {
@@ -134,7 +134,7 @@ nav ul li a img {
 }
 /* ---------------- */
 .iphone__light {
-    background-image: url(/images/home/iphone11-bg.jpg);
+  background-image: url("../images/home/iphone11-bg.jpg");
 }
 .dark .text {
   color: var(--bg-dark);
@@ -142,49 +142,47 @@ nav ul li a img {
 /* More products */
 /* Responsive Design */
 .more__products {
-    max-width: 130rem;
-    margin: 0 auto;
-display: grid;
-grid-template-columns: repeat(auto-fill, minmax(50rem, 1fr));
+  max-width: 130rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(50rem, 1fr));
 }
-.watch{
-    background-image: url(/images/home/watch-series-5.jpg);
+.watch {
+  background-image: url("../images/home/watch-series-5.jpg");
 }
-.card{
-    background-image: url(/images/home/apple-card.jpg);
+.card {
+  background-image: url("../images/home/apple-card.jpg");
 }
-.tv{
-    background-image: url(/images/home/apple-tv-background.jpg);
+.tv {
+  background-image: url("../images/home/apple-tv-background.jpg");
 }
-.airpods{
-background-color: black;
+.airpods {
+  background-color: black;
 }
-.airpods .air__img{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.airpods .air__img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.macbook{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.macbook {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.ipad{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.ipad {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.ipad img{
-    width: 100%;
+.ipad img {
+  width: 100%;
 }
-footer{
-    max-width: 100rem;
-    margin: 2rem auto;
-
+footer {
+  max-width: 100rem;
+  margin: 2rem auto;
 }
-footer .footer__links{
-    display: flex;
+footer .footer__links {
+  display: flex;
 }
 @media screen {
-  
 }
