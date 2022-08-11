@@ -66,7 +66,40 @@ nav ul li a img {
 nav ul li a img:hover {
   opacity: 1;
 }
-
+/* Toggle Menu */
+.menu {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  transition: all 0.2s;
+  position: relative;
+  padding: 1rem;
+}
+.menu {
+  display: none;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  transition: all 0.2s;
+  position: relative;
+  padding: 1rem;
+  /* opacity: 0.7; */
+}
+.menu:hover {
+  /* opacity: 1; */
+}
+.menu-top,
+.menu-botton {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  width: 20px;
+  height: 1.2px;
+  background: white;
+}
+.menu-botton {
+  transform: translateY(7px);
+}
 /* Section--Mac */
 
 .mac {
@@ -191,7 +224,6 @@ a i {
   color: var(--bg-dark);
 }
 /* More products */
-/* Responsive Design */
 .more__products {
   /* max-width: 130rem; */
   margin: 2rem auto;
@@ -332,7 +364,26 @@ footer .footer__links ul li a:active {
   display: flex;
   align-items: center;
 }
+/* Responsive Design */
 @media screen and (max-width: 600px) {
+  .menu {
+    display: block;
+  }
+  nav ul li:first-child {
+    display: block;
+    order: 2;
+  }
+  nav ul li:last-child {
+    display: block;
+    order: 1;
+  }
+  nav ul li:nth-child(10) {
+    display: block;
+    order: 3;
+  }
+  nav ul li {
+    display: none;
+  }
   .mac__image img {
     width: 100%;
   }
