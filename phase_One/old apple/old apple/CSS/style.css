@@ -368,7 +368,7 @@ footer .footer__links ul li a:active {
   align-items: center;
 }
 /* Responsive Design */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 950px) {
   .menu {
     display: block;
   }
