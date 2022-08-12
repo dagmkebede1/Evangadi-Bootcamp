@@ -7,6 +7,7 @@
   --color-grey: rgb(163, 162, 162);
   --color-blue: #06c;
 }
+
 html {
   font-family: "Montserrat", sans-serif;
   font-size: 62.5%;
@@ -68,6 +69,7 @@ nav ul li a img {
 nav ul li a img:hover {
   opacity: 1;
 }
+
 /* Toggle Menu */
 .menu {
   cursor: pointer;
@@ -77,6 +79,7 @@ nav ul li a img:hover {
   position: relative;
   padding: 1rem;
 }
+
 .menu {
   display: none;
   cursor: pointer;
@@ -87,9 +90,11 @@ nav ul li a img:hover {
   padding: 1rem;
   /* opacity: 0.7; */
 }
+
 .menu:hover {
   /* opacity: 1; */
 }
+
 .menu-top,
 .menu-botton {
   position: absolute;
@@ -99,14 +104,17 @@ nav ul li a img:hover {
   height: 1.2px;
   background: white;
 }
+
 .menu-botton {
   transform: translateY(7px);
 }
+
 /* Hero Section */
 .hero {
   position: relative;
   width: 100%;
 }
+
 .hero .lucky {
   display: flex;
   flex-direction: column;
@@ -117,6 +125,7 @@ nav ul li a img:hover {
   left: 50%;
   transform: translateX(-50%);
 }
+
 .lucky a:link,
 .lucky a:visited {
   background-color: var(--color-white);
@@ -127,14 +136,17 @@ nav ul li a img:hover {
   border-radius: 5rem;
   font-weight: 500;
 }
+
 .lucky a i {
   margin-left: 2rem;
 }
+
 .hero video {
   object-fit: cover;
   width: 100%;
   height: 75rem;
 }
+
 .link {
   font-size: 1.6rem;
   display: flex;
@@ -163,8 +175,7 @@ nav ul li a img:hover {
 }
 
 /* Iphone Section */
-.iphone {
-}
+.iphone {}
 
 .iphone__dark {
   background-image: url("../images/promo_iphone13pro_avail__beadms4ldidu_large.jpg");
@@ -208,6 +219,7 @@ a i {
   height: 71rem;
   object-fit: cover;
 }
+
 .mac {
   background-image: url("../images/hero_macbookair__el7scava26mq_large.png");
   background-position: center;
@@ -215,6 +227,7 @@ a i {
   height: 70rem;
   position: relative;
 }
+
 .mac-info {
   text-align: center;
   position: absolute;
@@ -222,9 +235,11 @@ a i {
   left: 30%;
   transform: translateY(-50%);
 }
+
 .mac-text h2 {
   font-size: 4.4rem;
 }
+
 .mac-link {
   padding: 0.7rem;
   font-size: 1.6rem;
@@ -233,23 +248,28 @@ a i {
   justify-content: center;
   gap: 2rem;
 }
+
 .mac-link a:link,
 .mac-link a:visited {
   text-decoration: none;
   font-weight: 500;
 }
+
 .mac-link a:hover,
 .mac-link a:active {
   text-decoration: underline;
 }
+
 .row {
   display: flex;
   gap: 2rem;
   margin-top: 2rem;
 }
+
 .iphone__dark {
   flex: 1 1 0;
 }
+
 .macbook-pro {
   flex: 1 1 0;
   background-image: url("../images/promo_mbp13__buwssod6c8vm_large.jpg");
@@ -271,13 +291,16 @@ a i {
   font-size: 1.8rem;
   color: var(--color-blue);
 }
+
 /* ---------------- */
 .iphone__light {
   background-image: url("../images/hero_iphone13_avail__gnqqkzuai6um_large.jpg");
 }
+
 .dark .text {
   color: var(--bg-dark);
 }
+
 .anim-image img {
   width: 100%;
 }
@@ -369,33 +392,41 @@ footer .footer__links ul li a:active {
   margin-left: 1.5rem;
   color: grey;
 }
+
 .state {
   display: flex;
   align-items: center;
 }
+
 @media screen and (max-width: 950px) {
   .menu {
     display: block;
   }
+
   nav ul li:first-child {
     display: block;
     order: 2;
   }
+
   nav ul li:last-child {
     display: block;
     order: 1;
   }
+
   nav ul li:nth-child(10) {
     display: block;
     order: 3;
   }
+
   nav ul li {
     display: none;
   }
+
   .copyright {
     display: flex;
     flex-wrap: wrap;
   }
+
   footer .footer__links {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));

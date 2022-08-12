@@ -31,7 +31,7 @@ nav {
   height: 4.4rem;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  opacity: 0.9;
+  opacity: 0.97;
 }
 
 nav ul {
@@ -217,10 +217,12 @@ a i {
   font-size: 1.8rem;
   color: #06c;
 }
+
 /* ---------------- */
 .iphone__light {
   background-image: url("../images/home/iphone11-bg.jpg");
 }
+
 .dark .text {
   color: black;
 }
@@ -233,11 +235,13 @@ a i {
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem; */
 }
+
 .row {
   display: flex;
   gap: 2rem;
   width: 100%;
 }
+
 /* Watch Section */
 .watch {
   background-image: url("../images/home/watch-series-5.jpg");
@@ -245,12 +249,14 @@ a i {
   flex: 1 1 0px;
   /* width: 77.15rem; */
 }
+
 /* Card Section */
 .card {
   background-image: url("../images/home/apple-card.jpg");
   flex: 1 1 0px;
   /* width: 77.15rem; */
 }
+
 /* tv Section */
 .tv {
   background-image: url("../images/home/apple-tv-background.jpg");
@@ -262,6 +268,7 @@ a i {
 .tv p i {
   margin-left: 1rem;
 }
+
 /* Airpods */
 .airpods {
   background-color: black;
@@ -273,13 +280,16 @@ a i {
   background-size: initial;
   /* width: 77.15rem; */
 }
+
 .airpods .air__img {
   /* display: flex;
   justify-content: center; */
 }
+
 .airpods .air__img img {
   /* transform: translateY(30%); */
 }
+
 /* Macbook Section */
 .macbook {
   margin-top: 2rem;
@@ -287,12 +297,14 @@ a i {
   align-items: center;
   justify-content: center;
 }
+
 .maci {
   background-color: #fafafa;
   flex: 1 1 0px;
   margin-top: 2rem;
   /* width: 77.15rem; */
 }
+
 /* Ipad Section */
 .ipad {
   display: flex;
@@ -392,6 +404,7 @@ footer .footer__links ul li a:active {
   margin-left: 1.5rem;
   color: grey;
 }
+
 .state {
   display: flex;
   align-items: center;
