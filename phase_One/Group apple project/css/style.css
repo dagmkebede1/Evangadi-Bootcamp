@@ -340,7 +340,7 @@ footer .footer__links ul li {
 
 footer .footer__links ul li a:link,
 footer .footer__links ul li a:visited {
-  color: grey;
+  color: rgb(83, 83, 83);
   font-size: 1.2rem;
   text-decoration: none;
 }
