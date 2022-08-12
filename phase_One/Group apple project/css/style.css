@@ -1,0 +1,439 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,300&display=swap");
+
+/* :root {
+  --bg-dark: black;
+  --bg-light-grey: #fafafa;
+  --color-white: white;
+  --color-grey: rgb(163, 162, 162);
+  --color-blue: #06c;
+} */
+
+html {
+  font-family: "Montserrat", sans-serif;
+  font-size: 62.5%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Navigations */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  font-size: 1.6rem;
+  background-color: black;
+  height: 4.4rem;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  opacity: 0.9;
+}
+
+nav ul {
+  width: 98rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav ul li {
+  list-style-type: none;
+}
+
+nav ul li a:link,
+nav ul li a:visited {
+  text-decoration: none;
+  color: rgb(163, 162, 162);
+  font-weight: 400;
+  padding: 0 0.5rem;
+  transition: all 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a:active {
+  color: white;
+}
+
+nav ul li a img {
+  margin: auto 0;
+  width: 1.8rem;
+  vertical-align: middle;
+  opacity: 0.7;
+}
+
+nav ul li a img:hover {
+  opacity: 1;
+}
+
+/* Toggle Menu */
+/* .menu {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  transition: all 0.2s;
+  position: relative;
+  padding: 1rem;
+}
+.menu {
+  display: none;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  transition: all 0.2s;
+  position: relative;
+  padding: 1rem;
+  opacity: 0.7;
+}
+.menu:hover {
+  opacity: 1;
+} */
+/* .menu-top,
+.menu-botton {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  width: 20px;
+  height: 1.2px;
+  background: white;
+}
+.menu-botton {
+  transform: translateY(7px);
+} */
+
+/* Section--Mac */
+.mac {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 2rem;
+  background-color: #fafafa;
+}
+
+.mac .mac__text p {
+  font-weight: 400;
+  font-size: 1.8rem;
+  color: rgb(110, 110, 110);
+}
+
+.mac .mac__text h1 {
+  font-size: 5.6rem;
+}
+
+.mac .mac__text h2 {
+  font-size: 2em;
+  font-weight: 400;
+}
+
+/* reusable class */
+.link {
+  font-size: 2rem;
+  display: flex;
+  gap: 2.5rem;
+}
+
+.link a:link,
+.link a:visited {
+  color: #06c;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.link a:hover,
+.link a:active {
+  /* color: var(--bg-dark); */
+  text-decoration: underline;
+}
+
+.bg__img {
+  height: 71rem;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+}
+
+/* Iphone Section */
+.iphone__dark {
+  background-image: url("../images/home/iphone11-pro-bg.jpg");
+}
+
+.info {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  color: white;
+  padding-top: 5rem;
+}
+
+/* reusable class */
+.text h2 {
+  font-size: 5rem;
+}
+
+.text h3 {
+  font-size: 2rem;
+  font-weight: 400;
+  padding: 1rem 0;
+  width: 400px;
+}
+
+.text p {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: rgb(163, 162, 162);
+  padding-bottom: 1rem;
+}
+
+a i {
+  margin-left: 0.5rem;
+}
+
+.image img {
+  width: 100%;
+  height: 71rem;
+  object-fit: cover;
+}
+
+.flex {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex p {
+  cursor: pointer;
+  padding-bottom: 5rem;
+  font-size: 1.8rem;
+  color: #06c;
+}
+/* ---------------- */
+.iphone__light {
+  background-image: url("../images/home/iphone11-bg.jpg");
+}
+.dark .text {
+  color: black;
+}
+
+/* More products */
+.more__products {
+  margin: 2rem auto;
+  padding: 1rem;
+  /* display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem; */
+}
+.row {
+  display: flex;
+  gap: 2rem;
+  width: 100%;
+}
+/* Watch Section */
+.watch {
+  background-image: url("../images/home/watch-series-5.jpg");
+  background-color: #fafafa;
+  flex: 1 1 0px;
+  /* width: 77.15rem; */
+}
+/* Card Section */
+.card {
+  background-image: url("../images/home/apple-card.jpg");
+  flex: 1 1 0px;
+  /* width: 77.15rem; */
+}
+/* tv Section */
+.tv {
+  background-image: url("../images/home/apple-tv-background.jpg");
+  margin-top: 2rem;
+  flex: 1 1 0px;
+  /* width: 77.15rem; */
+}
+
+.tv p i {
+  margin-left: 1rem;
+}
+/* Airpods */
+.airpods {
+  background-color: black;
+  position: relative;
+  margin-top: 2rem;
+  z-index: -1;
+  flex: 1 1 0px;
+  /* width: 77.15rem; */
+}
+.airpods .air__img {
+  display: flex;
+  justify-content: center;
+}
+.airpods .air__img img {
+  transform: translateY(30%);
+}
+/* Macbook Section */
+.macbook {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.maci {
+  background-color: #fafafa;
+  flex: 1 1 0px;
+  margin-top: 2rem;
+  /* width: 77.15rem; */
+}
+/* Ipad Section */
+.ipad {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ipad img {
+  width: 100%;
+}
+
+/* Footer Section */
+footer {
+  background-color: #fafafa;
+}
+
+.foot-cont {
+  max-width: 100rem;
+  margin: 2rem auto;
+}
+
+footer .footer__links {
+  border-top: 1px solid rgb(170, 169, 169);
+  display: flex;
+  padding-top: 2rem;
+  justify-content: space-between;
+}
+
+footer p {
+  font-size: 1.3rem;
+  padding: 2rem 1rem;
+  color: grey;
+}
+
+footer .footer__links ul {
+  margin-top: 1rem;
+}
+
+footer .footer__links h3 {
+  margin-top: 1rem;
+}
+
+footer .footer__links ul li {
+  list-style: none;
+  padding: 0.4rem;
+}
+
+footer .footer__links ul li a:link,
+footer .footer__links ul li a:visited {
+  color: grey;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+footer .footer__links ul li a:hover,
+footer .footer__links ul li a:active {
+  text-decoration: underline;
+}
+
+.copyright {
+  border-top: 1px solid rgb(170, 169, 169);
+  display: flex;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.copyright p {
+  color: rgb(51, 51, 51);
+}
+
+.policy {
+  margin: 0 auto;
+}
+
+.policy ul {
+  display: flex;
+  gap: 1rem;
+}
+
+.policy ul li {
+  list-style: none;
+}
+
+.policy ul li a:link,
+.policy ul li a:visited {
+  color: rgb(51, 51, 51);
+  font-size: 1.1rem;
+  text-decoration: none;
+}
+
+.policy ul li a:hover,
+.policy ul li a:active {
+  text-decoration: underline;
+}
+
+.policy ul li span {
+  margin-left: 1.5rem;
+  color: grey;
+}
+.state {
+  display: flex;
+  align-items: center;
+}
+
+/* Responsive Design */
+/* @media screen and (max-width: 950px) {
+  .menu {
+    display: block;
+  }
+  nav ul li:first-child {
+    display: block;
+    order: 2;
+  }
+  nav ul li:last-child {
+    display: block;
+    order: 1;
+  }
+  nav ul li:nth-child(10) {
+    display: block;
+    order: 3;
+  }
+  nav ul li {
+    display: none;
+  }
+  .mac__image img {
+    width: 100%;
+  }
+  .more__products {
+    max-width: 130rem;
+    margin: 2rem auto;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .copyright {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  footer .footer__links {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 2rem;
+  }
+} */
