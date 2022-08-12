@@ -265,18 +265,20 @@ a i {
 /* Airpods */
 .airpods {
   background-color: black;
-  position: relative;
   margin-top: 2rem;
-  z-index: -1;
   flex: 1 1 0px;
+  background-image: url("../images/home/air-pods.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: initial;
   /* width: 77.15rem; */
 }
 .airpods .air__img {
-  display: flex;
-  justify-content: center;
+  /* display: flex;
+  justify-content: center; */
 }
 .airpods .air__img img {
-  transform: translateY(30%);
+  /* transform: translateY(30%); */
 }
 /* Macbook Section */
 .macbook {
