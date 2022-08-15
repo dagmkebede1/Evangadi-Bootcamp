@@ -118,7 +118,19 @@ footer p span {
   font-size: 1.6rem;
 }
 
-/*Responsive Design*/
+/**************************************************************\
+|      __    __  _ __   __ _      _      __        |           |      Large Screens
+|      |\    /| | |__|  | | | \  | |     /\        |           |
+|      | \  / | | |     | | |  | | |    /  \       |           |        Computers
+|      |  \/  | | |--|  | | |  | | |   / /\ \      |   QUERY   |
+|      | |\/| | | |__   | | |  | | |  / /__\ \     |           |         Tablets
+|      |_|  |_| |_|__|  |_|_|_/  |_| /_/    \_\    |           |
+|                                                  |           |         Mobiles 
+***************************************************************/
+
+
+/*             RESPONSIVE DESIGN                   */
+
 @media screen and (max-width: 1345px) {
   .main__featured {
     display: flex;
