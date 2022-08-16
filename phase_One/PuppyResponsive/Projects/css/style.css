@@ -1,0 +1,76 @@
+/* Mobile Design/ Mobile first Approch */
+/* from 0px - 700px */
+* {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+header,
+footer {
+  text-align: center;
+  background-color: blue;
+  color: white;
+  padding: 10px 0;
+}
+footer {
+  padding: 30px 0;
+}
+.hero img {
+  width: 100%;
+}
+.center {
+  display: none;
+}
+.first__row,
+.second__row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin: 20px 0;
+}
+.second__row img {
+  width: 310px;
+}
+section:nth-child(2) {
+  text-align: center;
+}
+/* for Tablet and Ipads */
+/* from 700px-1000px */
+@media screen and (min-width: 700px) {
+  .first__row {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .second__row img {
+    width: 100%;
+  }
+}
+/* for Computers/Laptops and large Screens */
+/* from 1000px to the end */
+@media screen and (min-width: 1000px) {
+  main {
+    width: 980px;
+    margin: 0 auto;
+  }
+  .center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 310px;
+    height: 310px;
+    margin-bottom: 5px;
+    background-color: pink;
+  }
+  .center div {
+    width: 150px;
+  }
+  .center div p {
+    text-align: center;
+    font-size: 30px;
+  }
+  .second__row {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
