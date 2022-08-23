@@ -51,6 +51,9 @@ a {
 a:hover {
   text-decoration: underline;
 }
+.nothover:hover {
+  text-decoration: none;
+}
 .iphone-pro {
   background-image: url(../images/home/iphone11-pro-bg.jpg);
 }
@@ -62,6 +65,14 @@ a:hover {
 }
 .watch {
   background-image: url(../images/home/watch.jpg);
+}
+.tv {
+  background-image: url(../images/home/apple-tv-background.jpg);
+}
+.airpod {
+  background-image: url(../images/home/air-pods.jpg);
+  background-color: black;
+  background-position: bottom;
 }
 
 /* Footer Styling */
