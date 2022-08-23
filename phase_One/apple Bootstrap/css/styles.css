@@ -45,6 +45,12 @@ img {
   background-position: center;
   background-repeat: no-repeat;
 }
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
 .iphone-pro {
   background-image: url(../images/home/iphone11-pro-bg.jpg);
 }
