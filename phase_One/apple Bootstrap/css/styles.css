@@ -40,6 +40,7 @@ img {
   padding: 4px 0;
   border-bottom: 1px solid #4b4b4b;
 }
+/* our CSS Starts here */
 .apple-items {
   height: 580px;
   background-position: center;
@@ -74,6 +75,15 @@ a:hover {
   background-color: black;
   background-position: bottom;
 }
+.macbook {
+  background-image: url(../images/home/macbook-pro.jpg);
+  background-position: bottom;
+}
+.ipad {
+  background-image: url(../images/home/new-ipad.jpg);
+  background-size: contain;
+}
+/* Our CSS ends  */
 
 /* Footer Styling */
 .footer-wrapper {
