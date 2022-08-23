@@ -20,12 +20,11 @@ img {
 .top-50 {
   margin-top: 50px;
 }
-.top-100 {
-  padding-top: 100px;
-}
-/* Header Style */
+/* little code adede here */
 .nav-wrapper {
   background: rgba(0, 0, 0, 0.8);
+  /* this line for blury */
+  backdrop-filter: blur(10px);
   font-size: 0.85em;
   font-weight: 200;
 }
