@@ -1,15 +1,18 @@
 // alert("your JS file is connected!!");
-console.log("your JS file is connected!!");
-// question 1
+console.log("your JS file is connected Nerd!! go play the game :)");
 
+// question 1
 console.log(24 > 3);
 console.log(2 < "12");
 console.log(0 == 2);
 console.log(2.0 === 2);
 console.log(2.0 == "2");
 console.log(2 < "John");
+console.log(2 < NaN);
+console.log("a".charCodeAt(0));
 console.log(2 > "John");
 console.log("2" < "2");
+console.log("from here");
 console.log("2" > "12");
 console.log(1 == 1 || 3 == 2 || 3 == 7);
 console.log(1 == 1 && 2 == 2 && 3 == 7);
@@ -37,21 +40,23 @@ console.log(y);
 // 4,what is the value of z
 
 let z = 5;
-z += 3; // this mens z=z + 3 5+3= 8
+z += 3; //  5+3= 8
 console.log(z);
+
 // 5, the value of y
 let m = 10;
 let yy = m++;
-console.log(yy); // the answer is 10 why?
+console.log(yy); // value = 10, but if it was ++m = 11
 
 // 6, what is the value of s
 let n = 1;
 let s = n !== 2;
-console.log(s); // the answer is true
+console.log(s);
+
 // 7, what is the output of this statement
-console.log(+"2" + 2); // the answer is 4 b/c first convert string to number.
-console.log(7 % 3); // the reminder is 1
-console.log(2 + true); // the answer is three b/c first convert string to number
+console.log(+"2" + 2);
+console.log(7 % 3);
+console.log(2 + true);
 
 // question 3
 let a = 1;
@@ -64,3 +69,11 @@ const firstName = "Samson";
 const lastName = "Meseret";
 const fullName = firstName + " " + lastName;
 console.log(fullName);
+
+let same = " samson";
+let same1 = "meseret";
+same[0].toUpperCase();
+
+console.log(same.trim()[0].toUpperCase());
+
+console.log(5 / 0);
