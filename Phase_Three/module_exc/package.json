@@ -1,0 +1,17 @@
+{
+  "name": "module_exc",
+  "version": "1.0.0",
+  "main": "myCollector.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
+  "description": "",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mime-types": "^2.1.35",
+    "node-static": "^0.7.11"
+  }
+}
