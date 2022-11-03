@@ -6,7 +6,7 @@
 // function takes a single number as a parameter and returns a value that is 2 times
 // the parameter
 function myMultiplier(par) {
-  return 3 * par;
+  return 2 * par;
 }
 
 // let myMultiplier = (par)=> 2*par
@@ -16,7 +16,7 @@ function myMultiplier(par) {
 
 // your module on the terminal to see the printed output
 let result = myMultiplier(4);
-console.log(result);
+// console.log(result);
 // f. Export your "myMultiplier" function so that other modules can use it
 
 //ES6 Export Style
