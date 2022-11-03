@@ -6,7 +6,7 @@
 // function takes a single number as a parameter and returns a value that is 2 times
 // the parameter
 function myMultiplier(par) {
-  return 2 * par;
+  return 3 * par;
 }
 
 // let myMultiplier = (par)=> 2*par
@@ -22,9 +22,40 @@ console.log(result);
 //ES6 Export Style
 
 // Named Export
-// export { myMultiplier };  // when we are going to import this function we MUST call the exact name.
-// import { myMultiplier} from "./myFirst"
+// export { myMultiplier};  // when we are going to import this function we MUST call the exact name.
+// import { myMultiplier } from "./myFirst"
+// import { myMultiplier as other } from "./mySecond"
+// // comments
+// myMultiplier
+// other
 
 // Default Export
-export default myMultiplier; // you don't need to call the exact name here.
+export default myMultiplier;
+
+//  // you don't need to call the exact name here.
 // import yefelegachutin from "./myFirst"
+
+// Using CommonJS
+
+// Default
+// module.exports.firstFunc = myMultiplier;
+
+// console.log(module);
+
+// module{
+
+//     exports:{
+//         firstFunc: myMultiplier;
+//     }
+
+// }
+
+// exports.firstFunc = myMultiplier //
+
+// const anyName = require("./myFirst")
+// anyName.firstFunc
+
+//Named Feature
+
+// module.exports = { myMultiplier }
+// let { myMultiplier } = require("./myFirst")
