@@ -50,11 +50,11 @@ http
   .createServer(function (req, res) {
     // let generatedNum = random();
     // res.write("Request received and processed " + generatedNum);
-    let fileToBeServed = path.join(
-      __dirname,
-      "/static",
-      "/apple-html-css-replica"
-    );
+    // let fileToBeServed = path.join(
+    //   __dirname,
+    //   "/static",
+    //   "/apple-html-css-replica"
+    // );
 
     let paredUrl = url.parse(req.url);
     let parsedPath = paredUrl.path;
