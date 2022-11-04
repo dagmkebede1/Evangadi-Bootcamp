@@ -37,12 +37,47 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 // from my "about page ” ’ text sent to your browser
 // e. Now, modify your listener function in a way that it serves any of the pages inside
 // of your "static" folder when requested
+
+// By Built in Http Module and Mime-type package
 import dotenv from "dotenv";
 import mime from "mime-types";
-import express from "express";
 dotenv.config();
+
 const PORT = process.env.PORT;
+
 let fileToBeServed = path.join(__dirname, "/static", "/apple-html-css-replica");
+http
+  .createServer(function (req, res) {
+    // let generatedNum = random();
+    // res.write("Request received and processed " + generatedNum);
+    let fileToBeServed = path.join(
+      __dirname,
+      "/static",
+      "/apple-html-css-replica"
+    );
+
+    let paredUrl = url.parse(req.url);
+    let parsedPath = paredUrl.path;
+    let dynamicContentType = mime.lookup(parsedPath);
+
+    if (parsedPath == "/") {
+      parsedPath = "index.html";
+    } else if (parsedPath == "/about") {
+      parsedPath = "about.html";
+    }
+
+    fs.readFile(path.join(fileToBeServed, parsedPath), function (err, data) {
+      if (err) console.log(err);
+      res.writeHead(200, { "content-type": dynamicContentType });
+      res.end(data);
+    });
+  })
+  .listen(PORT, function () {
+    console.log(`server running on port: ${PORT}`);
+  });
+
+// By Express Framework
+import express from "express";
 const server = express();
 
 server.use(express.static(fileToBeServed));
@@ -58,36 +93,6 @@ server.get("*", (req, res) => {
 });
 
 server.listen(PORT, () => console.log(`server running on port ${PORT}`));
-
-// http
-//   .createServer(function (req, res) {
-//     // let generatedNum = random();
-//     // res.write("Request received and processed " + generatedNum);
-//     let fileToBeServed = path.join(
-//       __dirname,
-//       "/static",
-//       "/apple-html-css-replica"
-//     );
-
-//     let paredUrl = url.parse(req.url);
-//     let parsedPath = paredUrl.path;
-//     let dynamicContentType = mime.lookup(parsedPath);
-
-//     if (parsedPath == "/") {
-//       parsedPath = "index.html";
-//     } else if (parsedPath == "/about") {
-//       parsedPath = "about.html";
-//     }
-
-//     fs.readFile(path.join(fileToBeServed, parsedPath), function (err, data) {
-//       if (err) console.log(err);
-//       res.writeHead(200, { "content-type": dynamicContentType });
-//       res.end(data);
-//     });
-//   })
-//   .listen(PORT, function () {
-//     console.log(`server running on port: ${PORT}`);
-//   });
 
 // ■ Note: It is a good practice to write a custom message such as
 // console.log(“Server running”) in your server listener you create to check
