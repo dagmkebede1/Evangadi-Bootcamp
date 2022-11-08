@@ -1,0 +1,18 @@
+(MYSQL) (SQL: structured query language) (SQL Database)-MYSQL
+-Oracle
+-postgress
+-micr sql
+
+
+noSQL(not only structured query language)
+
+MongoDB 100x Faster than sql based Databases
+redi
+firebass
+
+
+
+Database
+    1, server
+    2. storage
+
