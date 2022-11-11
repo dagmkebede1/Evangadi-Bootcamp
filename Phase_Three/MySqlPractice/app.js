@@ -1,5 +1,7 @@
 const express = require("express");
+const path = require("path");
 const mysql = require("mysql2");
+// const cors = require("cors");
 
 const db = mysql.createConnection({
   host: "localhost",
@@ -8,13 +10,37 @@ const db = mysql.createConnection({
   database: "myDB",
 });
 
-// const app = express();
 const server = express();
 const PORT = 5000 || process.env.PORT;
 
+server.use(express.static("./public"));
+
+server.use(express.urlencoded({ extended: true }));
+
+server.get("/", (req, res) => {});
+
+server.post("/add-product", (req, res) => {
+  let { productId, productName, productUrl } = req.body;
+  let q = `INSERT INTO Products(product_name, product_url) VALUES (?)`;
+
+  let values = [productName, productUrl];
+
+  db.query(q, [values], (err) => {
+    if (err) console.log(err);
+    else {
+      console.log("Product Inserted !");
+    }
+  });
+  // let productId = req.body.productId
+  // let productName = req.body.productName
+  // let productUrl = req.body.productUrl
+
+  console.log(req.body.productId);
+});
+
 server.get("/install", (req, res) => {
   let q = `CREATE TABLE IF NOT EXISTS Products(
-        product_id INT(11) NOT NULL AUTO_INCREMENT,
+        product_id INT(11) NOT NULL AUTO_INCREMENT=1,
         product_url VARCHAR(255) NOT NULL,
         product_name VARCHAR(50) NOT NULL,
         PRIMARY KEY (product_id)
