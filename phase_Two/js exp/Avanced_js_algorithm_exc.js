@@ -47,20 +47,20 @@ function getOnlyEven(array) {
 // ○ reverseCompare(23) prints "Not ok", because 23 is not greater than 32
 
 //Method 1
-function reverseCompare(number) {
-  let numString = number.toString();
-  let reversed = "";
-  for (let i = numString.length - 1; i >= 0; i--) {
-    reversed = reversed + numString[i];
-  }
-  if (number > reversed) {
-    return "OK";
-  } else if (reversed > number) {
-    return "not OK";
-  } else {
-    return "neither OK nor not OK";
-  }
-}
+// function reverseCompare(number) {
+//   let numString = number.toString();
+//   let reversed = "";
+//   for (let i = numString.length - 1; i >= 0; i--) {
+//     reversed = reversed + numString[i];
+//   }
+//   if (number > reversed) {
+//     return "OK";
+//   } else if (reversed > number) {
+//     return "not OK";
+//   } else {
+//     return "neither OK nor not OK";
+//   }
+// }
 // console.log(reverseCompare(72));
 
 //Method 2
@@ -79,8 +79,8 @@ let reverseCompare = (number) => {
   }
 };
 
-// let result = reverseCompare(72);
-// console.log(result);
+let result = reverseCompare(72);
+console.log(result);
 
 // Question 3
 // ● Write a function that takes a positive integer and returns the factorial of the number.

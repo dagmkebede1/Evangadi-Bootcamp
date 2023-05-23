@@ -1,0 +1,2 @@
+pwd /n echo after that
+pwd cd ..
