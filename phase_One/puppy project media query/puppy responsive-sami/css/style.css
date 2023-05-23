@@ -50,7 +50,7 @@ main section div img {
   .missing {
     display: block;
     position: relative;
-    background-color: pink;
+    background-color: rgb(209, 74, 96);
     margin-bottom: 5px;
   }
   .missing div {
@@ -62,7 +62,8 @@ main section div img {
   .missing p {
     text-align: center;
     width: 150px;
-    font-size: 40px;
+    /* font-size: 40px; */
+    font-size: calc(32px + 1vw);
   }
   main section div img {
     width: 100%;

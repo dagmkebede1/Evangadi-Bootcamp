@@ -1,0 +1,22 @@
+section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  color: #ffffff;
+}
+.box {
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+}
+.red {
+  background-color: red;
+}
+.blue {
+  background-color: blue;
+}
+.green {
+  background-color: green;
+}
